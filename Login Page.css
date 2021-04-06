@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: #e6e9f0;
+}
+/*    font-family: Source Sans Pro;
+    background: #282828;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+@keyframes Gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}*/
+.container{
+    height: 480px;
+    width: 280px;
+    box-shadow: 10px 10px 15px rgb(192, 183, 183), -10px -10px 15px white;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+.container .heading{
+    padding: 70px 0 45px 0;
+    color: #90D86A;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.container .user{
+    padding: 7px 0;
+}
+.container .user input{
+    padding: 15px 20px;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    font-style: 0.9em;
+    background: #b7f199;
+    color: white;
+}
+.container .user input:hover{
+    box-shadow: 5px 5px 8px rgb(185, 184, 184), -5px -5px 10px white;
+    transform: scale(1.1);
+    transition: 0.3s ease all;
+}
+.container .user input::placeholder{
+    color: white;
+}
+.container .button{
+    margin-top: 20px;
+}
+.container .button input{
+    border-style: none;
+    outline: none;
+    color: white;
+    background: #90D86A;
+    padding: 7px 15px;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px rgb(185, 184, 184), -5px -5px 10px white;
+}
+.container .help{
+    font-size: 0.7em;
+    margin-top: 20px;
+    color: rgb(71, 69, 69);
+    cursor: pointer;
+}
+.container .help span{
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+}
+.container .social{
+    margin-top: 25px;
+}
+.container .social .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .social .items li{
+    list-style: none;
+    padding: 0 7px;
+}
+.container .social .items li h3{
+    clear: grey;
+    box-shadow: 5px 5px 8px rgb(185, 184, 184), -5px -5px 10px white;
+    padding: 5px 15px;
+    border-radius: 40%;
+}
+.container .social .items li h3:hover{
+    color: white;
+    background: #90D86A;
+    cursor: pointer;
+}
